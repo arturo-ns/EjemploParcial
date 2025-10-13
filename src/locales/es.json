@@ -1,0 +1,24 @@
+{
+    "option": {
+    "home": "Inicio",
+    "categories": "Categorías",
+    "tutorials": "Tutoriales",
+    "button1": "Boton1"
+  },
+    "home": {
+    "title": "Inicio",
+    "content": "Bienvenido a Proyecto."
+  },
+    "page-not-found": {
+    "title": "Página no encontrada",
+    "content": "La ruta {unavailable-route} no está disponible.",
+    "go-home": "Ir al Inicio"
+  },
+    "brand": {
+    "name": "Proyecto"
+  },
+    "footer": {
+    "copyright": "Copyright © {year} {company} todos los derechos reservados.",
+    "developed-by": " Desarrollado por {name}, Código: {code}"
+  }
+}
