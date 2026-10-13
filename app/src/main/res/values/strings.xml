@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RecipeApp</string>
+    <string name="onboarding_title">RecipeApp</string>
+    <string name="onboarding_message">Descubre recetas destacadas y guarda las que quieres cocinar. Consulta su cocina, dificultad, tiempos, porciones y calificación.</string>
+    <string name="onboarding_image_description">Ilustración de una persona preparando pasta con tomates y albahaca</string>
+    <string name="action_continue">Continuar</string>
+    <string name="action_back">Volver</string>
+    <string name="action_retry">Reintentar</string>
+    <string name="action_remove">Quitar de por cocinar</string>
+    <string name="tab_recipes">Recetas</string>
+    <string name="tab_to_cook">Por cocinar</string>
+    <string name="recipes_title">Recetas</string>
+    <string name="to_cook_title">Por cocinar</string>
+    <string name="detail_title">Detalle de la receta</string>
+    <string name="prep_time">Preparación: %1$d min</string>
+    <string name="cook_time">Cocción: %1$d min</string>
+    <string name="servings">Porciones: %1$d</string>
+    <string name="rating">Calificación: %1$s</string>
+    <string name="ingredients">Ingredientes</string>
+    <string name="instructions">Instrucciones</string>
+    <string name="mark_to_cook">Marcar por cocinar</string>
+    <string name="unmark_to_cook">Quitar de por cocinar</string>
+    <string name="marked_to_cook">Esta receta está marcada por cocinar</string>
+    <string name="not_marked_to_cook">Esta receta no está marcada por cocinar</string>
+    <string name="empty_to_cook">Aún no hay recetas por cocinar. Márcalas desde su detalle.</string>
+    <string name="error_loading">No se pudieron cargar las recetas.</string>
+    <string name="error_detail">No se pudo mostrar el detalle de la receta.</string>
+    <string name="cuisine_label">Tipo de cocina: %1$s</string>
+    <string name="difficulty_label">Dificultad</string>
+</resources>
