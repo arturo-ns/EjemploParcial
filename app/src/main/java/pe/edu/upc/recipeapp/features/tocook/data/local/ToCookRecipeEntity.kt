@@ -2,7 +2,7 @@ package pe.edu.upc.recipeapp.features.tocook.data.local
 
 import androidx.room3.Entity
 import androidx.room3.PrimaryKey
-import pe.edu.upc.recipeapp.features.recipes.domain.Recipe
+import pe.edu.upc.recipeapp.features.home.domain.Recipe
 
 @Entity(tableName = "to_cook_recipes")
 data class ToCookRecipeEntity(

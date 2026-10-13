@@ -9,7 +9,7 @@ data object OnboardingRoute
 data object MainGraph
 
 @Serializable
-data object RecipesRoute
+data object HomeRoute
 
 @Serializable
 data object ToCookRoute

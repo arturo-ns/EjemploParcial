@@ -1,4 +1,4 @@
-package pe.edu.upc.recipeapp.features.recipes.presentation
+package pe.edu.upc.recipeapp.features.home.presentation
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -26,13 +26,13 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import pe.edu.upc.recipeapp.R
-import pe.edu.upc.recipeapp.features.recipes.presentation.components.RecipeCard
+import pe.edu.upc.recipeapp.features.home.presentation.components.RecipeCard
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun RecipeListScreen(
+fun HomeScreen(
     onRecipeSelected: (Int) -> Unit,
-    viewModel: RecipeListViewModel = hiltViewModel()
+    viewModel: HomeViewModel = hiltViewModel()
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
 
@@ -50,11 +50,11 @@ fun RecipeListScreen(
                 .fillMaxSize()
         ) {
             when (val state = uiState) {
-                RecipeListUiState.Loading -> {
+                HomeUiState.Loading -> {
                     CircularProgressIndicator(modifier = Modifier.align(Alignment.Center))
                 }
 
-                RecipeListUiState.Error -> {
+                HomeUiState.Error -> {
                     Column(
                         modifier = Modifier
                             .align(Alignment.Center)
@@ -73,7 +73,7 @@ fun RecipeListScreen(
                     }
                 }
 
-                is RecipeListUiState.Success -> {
+                is HomeUiState.Success -> {
                     LazyColumn(
                         contentPadding = PaddingValues(16.dp),
                         verticalArrangement = Arrangement.spacedBy(12.dp)

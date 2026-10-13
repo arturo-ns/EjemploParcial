@@ -2,8 +2,8 @@ package pe.edu.upc.recipeapp
 
 import org.junit.Assert.assertEquals
 import org.junit.Test
-import pe.edu.upc.recipeapp.features.recipes.data.remote.RecipeDto
-import pe.edu.upc.recipeapp.features.recipes.data.remote.toDomain
+import pe.edu.upc.recipeapp.features.home.infrastructure.remote.RecipeDto
+import pe.edu.upc.recipeapp.features.home.infrastructure.remote.toDomain
 import pe.edu.upc.recipeapp.features.tocook.data.local.StringListConverter
 
 class RecipeDtoMapperTest {

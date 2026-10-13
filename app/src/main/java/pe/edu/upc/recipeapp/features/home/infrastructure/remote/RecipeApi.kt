@@ -1,4 +1,4 @@
-package pe.edu.upc.recipeapp.features.recipes.data.remote
+package pe.edu.upc.recipeapp.features.home.infrastructure.remote
 
 import retrofit2.http.GET
 import retrofit2.http.Path

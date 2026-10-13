@@ -4,8 +4,8 @@ import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import pe.edu.upc.recipeapp.features.recipes.data.RecipeRepositoryImpl
-import pe.edu.upc.recipeapp.features.recipes.domain.RecipeRepository
+import pe.edu.upc.recipeapp.features.home.infrastructure.RecipeRepositoryImpl
+import pe.edu.upc.recipeapp.features.home.domain.RecipeRepository
 import pe.edu.upc.recipeapp.features.tocook.data.ToCookRepositoryImpl
 import pe.edu.upc.recipeapp.features.tocook.domain.ToCookRepository
 import javax.inject.Singleton

@@ -1,4 +1,4 @@
-package pe.edu.upc.recipeapp.features.recipes.domain
+package pe.edu.upc.recipeapp.features.home.domain
 
 interface RecipeRepository {
     suspend fun getRecipes(): Result<List<Recipe>>

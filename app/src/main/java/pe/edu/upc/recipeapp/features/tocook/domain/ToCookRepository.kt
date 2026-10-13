@@ -1,7 +1,7 @@
 package pe.edu.upc.recipeapp.features.tocook.domain
 
 import kotlinx.coroutines.flow.Flow
-import pe.edu.upc.recipeapp.features.recipes.domain.Recipe
+import pe.edu.upc.recipeapp.features.home.domain.Recipe
 
 /**
  * Local catalog of recipes the user marked to cook.

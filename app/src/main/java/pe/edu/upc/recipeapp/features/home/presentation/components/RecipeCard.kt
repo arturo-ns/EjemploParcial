@@ -1,4 +1,4 @@
-package pe.edu.upc.recipeapp.features.recipes.presentation.components
+package pe.edu.upc.recipeapp.features.home.presentation.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -26,7 +26,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import coil3.compose.AsyncImage
 import pe.edu.upc.recipeapp.R
-import pe.edu.upc.recipeapp.features.recipes.domain.Recipe
+import pe.edu.upc.recipeapp.features.home.domain.Recipe
 
 @Composable
 fun DifficultyBadge(difficulty: String) {

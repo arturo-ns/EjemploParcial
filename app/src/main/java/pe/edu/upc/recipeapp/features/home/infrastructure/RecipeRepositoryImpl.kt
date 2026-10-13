@@ -1,9 +1,9 @@
-package pe.edu.upc.recipeapp.features.recipes.data
+package pe.edu.upc.recipeapp.features.home.infrastructure
 
-import pe.edu.upc.recipeapp.features.recipes.data.remote.RecipeApi
-import pe.edu.upc.recipeapp.features.recipes.data.remote.toDomain
-import pe.edu.upc.recipeapp.features.recipes.domain.Recipe
-import pe.edu.upc.recipeapp.features.recipes.domain.RecipeRepository
+import pe.edu.upc.recipeapp.features.home.infrastructure.remote.RecipeApi
+import pe.edu.upc.recipeapp.features.home.infrastructure.remote.toDomain
+import pe.edu.upc.recipeapp.features.home.domain.Recipe
+import pe.edu.upc.recipeapp.features.home.domain.RecipeRepository
 import javax.inject.Inject
 import javax.inject.Singleton
 

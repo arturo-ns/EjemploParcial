@@ -1,6 +1,6 @@
-package pe.edu.upc.recipeapp.features.recipes.data.remote
+package pe.edu.upc.recipeapp.features.home.infrastructure.remote
 
-import pe.edu.upc.recipeapp.features.recipes.domain.Recipe
+import pe.edu.upc.recipeapp.features.home.domain.Recipe
 
 data class RecipesResponse(
     val count: Int,

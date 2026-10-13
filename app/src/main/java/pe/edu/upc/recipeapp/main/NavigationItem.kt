@@ -13,8 +13,8 @@ enum class NavigationItem(
     val icon: ImageVector,
     @StringRes val titleRes: Int
 ) {
-    RECIPES(
-        route = RecipesRoute,
+    HOME(
+        route = HomeRoute,
         icon = Icons.Filled.RestaurantMenu,
         titleRes = R.string.tab_recipes
     ),

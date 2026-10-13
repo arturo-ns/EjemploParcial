@@ -2,7 +2,7 @@ package pe.edu.upc.recipeapp.features.tocook.data
 
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
-import pe.edu.upc.recipeapp.features.recipes.domain.Recipe
+import pe.edu.upc.recipeapp.features.home.domain.Recipe
 import pe.edu.upc.recipeapp.features.tocook.data.local.ToCookDao
 import pe.edu.upc.recipeapp.features.tocook.data.local.toDomain
 import pe.edu.upc.recipeapp.features.tocook.data.local.toEntity

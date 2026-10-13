@@ -24,7 +24,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import pe.edu.upc.recipeapp.R
-import pe.edu.upc.recipeapp.features.recipes.presentation.components.RecipeCard
+import pe.edu.upc.recipeapp.features.home.presentation.components.RecipeCard
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

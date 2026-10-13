@@ -1,4 +1,4 @@
-package pe.edu.upc.recipeapp.features.recipes.presentation
+package pe.edu.upc.recipeapp.features.home.presentation
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -40,8 +40,8 @@ import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import coil3.compose.AsyncImage
 import pe.edu.upc.recipeapp.R
-import pe.edu.upc.recipeapp.features.recipes.domain.Recipe
-import pe.edu.upc.recipeapp.features.recipes.presentation.components.DifficultyBadge
+import pe.edu.upc.recipeapp.features.home.domain.Recipe
+import pe.edu.upc.recipeapp.features.home.presentation.components.DifficultyBadge
 import java.util.Locale
 
 @OptIn(ExperimentalMaterial3Api::class)

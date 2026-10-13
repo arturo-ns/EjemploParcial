@@ -1,4 +1,4 @@
-package pe.edu.upc.recipeapp.features.recipes.presentation
+package pe.edu.upc.recipeapp.features.home.presentation
 
 import android.util.Log
 import androidx.lifecycle.SavedStateHandle
@@ -11,8 +11,8 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
-import pe.edu.upc.recipeapp.features.recipes.domain.Recipe
-import pe.edu.upc.recipeapp.features.recipes.domain.RecipeRepository
+import pe.edu.upc.recipeapp.features.home.domain.Recipe
+import pe.edu.upc.recipeapp.features.home.domain.RecipeRepository
 import pe.edu.upc.recipeapp.features.tocook.domain.ToCookRepository
 import pe.edu.upc.recipeapp.main.RecipeDetailRoute
 import javax.inject.Inject

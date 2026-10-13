@@ -14,8 +14,8 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.navigation
 import androidx.navigation.compose.rememberNavController
 import pe.edu.upc.recipeapp.features.onboarding.presentation.OnboardingScreen
-import pe.edu.upc.recipeapp.features.recipes.presentation.RecipeDetailScreen
-import pe.edu.upc.recipeapp.features.recipes.presentation.RecipeListScreen
+import pe.edu.upc.recipeapp.features.home.presentation.RecipeDetailScreen
+import pe.edu.upc.recipeapp.features.home.presentation.HomeScreen
 import pe.edu.upc.recipeapp.features.tocook.presentation.ToCookListScreen
 
 @Composable
@@ -23,7 +23,7 @@ fun MainScreen() {
     val navController = rememberNavController()
     val backStackEntry by navController.currentBackStackEntryAsState()
     val showBottomBar = backStackEntry?.destination?.hierarchy?.any { destination ->
-        destination.hasRoute<RecipesRoute>() || destination.hasRoute<ToCookRoute>()
+        destination.hasRoute<HomeRoute>() || destination.hasRoute<ToCookRoute>()
     } == true
 
     Scaffold(
@@ -50,9 +50,9 @@ fun MainScreen() {
                     }
                 )
             }
-            navigation<MainGraph>(startDestination = RecipesRoute) {
-                composable<RecipesRoute> {
-                    RecipeListScreen(
+            navigation<MainGraph>(startDestination = HomeRoute) {
+                composable<HomeRoute> {
+                    HomeScreen(
                         onRecipeSelected = { recipeId ->
                             navController.navigate(RecipeDetailRoute(recipeId))
                         }

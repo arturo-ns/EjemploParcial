@@ -21,7 +21,7 @@ fun MainNavigationBar(navController: NavController) {
         NavigationItem.entries.forEach { item ->
             val selected = currentDestination?.hierarchy?.any { destination ->
                 when (item) {
-                    NavigationItem.RECIPES -> destination.hasRoute<RecipesRoute>()
+                    NavigationItem.HOME -> destination.hasRoute<HomeRoute>()
                     NavigationItem.TO_COOK -> destination.hasRoute<ToCookRoute>()
                 }
             } == true
@@ -30,7 +30,7 @@ fun MainNavigationBar(navController: NavController) {
                 selected = selected,
                 onClick = {
                     navController.navigate(item.route) {
-                        popUpTo<RecipesRoute> {
+                        popUpTo<HomeRoute> {
                             saveState = true
                         }
                         launchSingleTop = true
