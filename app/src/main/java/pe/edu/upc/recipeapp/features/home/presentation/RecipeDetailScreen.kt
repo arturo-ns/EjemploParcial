@@ -12,10 +12,6 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.filled.ArrowBack
-import androidx.compose.material.icons.filled.Bookmark
-import androidx.compose.material.icons.outlined.BookmarkBorder
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.CircularProgressIndicator
@@ -40,6 +36,9 @@ import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import coil3.compose.AsyncImage
 import pe.edu.upc.recipeapp.R
+import pe.edu.upc.recipeapp.core.designsystems.arrowBack
+import pe.edu.upc.recipeapp.core.designsystems.bookmark
+import pe.edu.upc.recipeapp.core.designsystems.bookmarkBorder
 import pe.edu.upc.recipeapp.features.home.domain.Recipe
 import pe.edu.upc.recipeapp.features.home.presentation.components.DifficultyBadge
 import java.util.Locale
@@ -60,7 +59,7 @@ fun RecipeDetailScreen(
                 navigationIcon = {
                     IconButton(onClick = onBack) {
                         Icon(
-                            imageVector = Icons.AutoMirrored.Filled.ArrowBack,
+                            imageVector = arrowBack,
                             contentDescription = stringResource(R.string.action_back)
                         )
                     }
@@ -244,7 +243,7 @@ private fun ToCookToggle(
             )
         ) {
             Icon(
-                imageVector = Icons.Filled.Bookmark,
+                imageVector = bookmark,
                 contentDescription = null
             )
             Text(
@@ -259,7 +258,7 @@ private fun ToCookToggle(
             modifier = Modifier.fillMaxWidth()
         ) {
             Icon(
-                imageVector = Icons.Outlined.BookmarkBorder,
+                imageVector = bookmarkBorder,
                 contentDescription = null
             )
             Text(
